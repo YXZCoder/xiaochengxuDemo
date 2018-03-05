@@ -1,0 +1,130 @@
+/* pages/mine/mine.wxss */
+
+.container1 {
+  overflow: hidden;
+  overflow-y: hidden;
+  padding: 0;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  background: red;
+  align-items: center;
+  width: 100%;
+  padding: 50rpx 0;
+}
+
+.userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-top: 20rpx;
+  color: #fff;
+}
+
+.my-item {
+  /* display: flex; *//* flex-direction: column; */
+  margin: 20rpx 0;
+  line-height: 100rpx;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.moneyNumber {
+  margin-left: 20rpx;
+}
+
+.buttonArea {
+  display: flex;
+  flex: row;
+  background: #fff;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+
+.changeButton {
+  background: green;
+  font: 14rpx;
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+  width: 100%;
+  color: #fff;
+  align-content: center;
+}
+
+.moneyButton {
+  background: red;
+  font: 14rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  width: 100%;
+  color: #fff;
+}
+
+.list {
+  width: 100%;
+  border-bottom: 1rpx solid #eee;
+  margin-left: 20rpx;
+  line-height: 100rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.bindPhone {
+  display: flex;
+  justify-content: center;
+}
+
+.bindPhoneButton {
+  background-color: #e6e6e6;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+}
+
+.about-view {
+  display: flex;
+  flex-direction: row;
+  line-height: 100rpx;
+  align-items: center;
+}
+
+.about-text {
+  margin-left: 20rpx;
+}
+
+.arrow-right {
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+.login {
+  /* display: inline; */
+}
+
+.loginbutton {
+  color: #fff;
+  background-color: red;
+  border-radius: 10rpx;
+  text-align: center;
+  margin: 20rpx 20rpx;
+  padding: 10rpx;
+}
+
+.swiper-container {
+ 
+}
+
+.swiper_box {
+  height: 500.5rpx; 
+}
+
+.slider-image {
+  width: 100%;
+}

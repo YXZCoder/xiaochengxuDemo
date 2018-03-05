@@ -1,0 +1,49 @@
+<!--pages/mine/mine.wxml-->
+<view class="container1">
+  <view class='userinfo'>
+    <image class='userinfo-avatar' src='{{userInfo.avatarUrl}}'></image>
+    <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+  </view>
+  <view style='height:20rpx;background:#eee;width:100%'></view>
+  <view class='my-item'>
+    <view class='moneyNumber'>余额0元， 冻结0元</view>
+    <view class='buttonArea'>
+      <button class='changeButton'>充值</button>
+      <button class='moneyButton'>提现</button>
+    </view>
+  </view>
+  <view class='current-integral' style='display:flex;width:100%;border-bottom: 1px solid #eee;padding-bottom: 10rpx;'>
+    <view style='margin-left:20rpx;line-height:100rpx'>当前积分 0</view>
+    <view style='margin-right:20rpx;position:absolute;right:0;background:#e6e6e6;padding:20rpx;border-radius:10rpx'>每日签到</view>
+  </view>
+  <view wx:for="{{titleArray}}" class='list'>
+    {{item}}
+  </view>
+  <view class='bindPhone'>
+    <view class='bindPhoneButton'>绑定手机号码</view>
+  </view>
+
+  <view style='height:20rpx;background:#eee;width:100%;margin-top:40rpx'></view>
+  <view class='about-view'>
+    <view class='about-text'>关于我们</view>
+    <image class='arrow-right' src='/images/arrow-right.png'></image>
+  </view>
+  <view style='height:20rpx;background:#eee;width:100%;'></view>
+  <view class='login'>
+    <view class='loginbutton'>重新登录</view>
+  </view>
+
+  <view style='height:20rpx;background:#eee;width:100%;'></view>
+
+
+  <view class="swiper-container">
+    <swiper class='swiper_box' autoplay='true' circular='true' indicator-dots='true' indicator-active-color='red' >
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image class='slider-image' src="{{item}}" mode='widthFix'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+</view>

@@ -1,0 +1,22 @@
+<!--pages/shop-cart/index.wxml-->
+<view class='shop-container'>
+  
+  <view class='text'>
+    <view class='line-logo'></view>
+    <view class='shop-title'>兑换记录</view>  
+  </view>
+
+
+  <view class='shop-goodsContainer' wx:for="{{goods}}">
+    <image class='shop-image' src='/images/qd.png'></image>
+    <view>
+      <view class='name'>杨晓周</view>
+      <view class='time'>2017-12-23下单</view>
+    </view>
+    <view class='gift-container'>
+      <view class='gift'>+30元红包</view>
+      <view class='state'>已到账</view>
+    </view>
+  </view>
+  
+</view>

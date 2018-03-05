@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class='container1'>
+  <view class='swiper-container'>
+    <swiper class='swiper_box' autoplay='true' circular='true'>
+      <block wx:for="{{banners}}" wx:key="id">
+        <swiper-item>
+          <image class='slider-image' src='{{item.picUrl}}_m' mode='widthFix'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='type-container'>
+    <scroll-view class='type-navbar' scroll-x="true">
+      <view class='type-box' wx:for="{{categories}}" wx:key="id">
+        <view class="type-navbar-item {{activeCategoryId == item.id ? 'type-item-on' : ''}}" id='{{item.id}}' bindtap='tabClick'>
+          {{item.name}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='goods-container'>
+    <view class='goods-box'wx:for="{{goods}}" >
+      <view class="image-box">
+        <image class="image" src="{{item.pic}}" lazy-load='true' mode='aspecFill'></image>
+      </view>
+      <view class='goods-title'>{{item.name}}</view>
+      <view class='goods-price'>¥ {{item.minPrice}}</view>
+    </view>
+  </view>
+</view>

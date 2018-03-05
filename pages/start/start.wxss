@@ -1,0 +1,44 @@
+page {
+  background: #eee;
+}
+
+.content{
+
+}
+
+.iamge-background{
+  display: flex;
+  flex-direction: column; 
+  background: #69C3AA;
+  width: 100%;
+  /* height: 400px; */
+  align-items: center;
+
+}
+
+.title_image{
+  margin-top: 20px; 
+  width: 300px;
+  height: 100px;
+  
+}
+.icon{
+  margin-top: 20px; 
+  width: 100px;
+  height: 100px;
+}
+
+.wave{
+  margin-bottom: 0px;
+  width: 100%;
+  height: 100px;
+}
+
+.button{
+  background: #69C3AA;
+  text-align: center;
+  border-radius: 25px;
+  line-height: 50px;
+  margin: 10px 50px;
+  color: #fff;
+}

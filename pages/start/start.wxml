@@ -1,0 +1,11 @@
+<!--start.wxml-->
+<view class='content'>
+  <view class='iamge-background'>
+    <image class="title_image" src='/images/more/title8.png' mode='aspectFit'></image>
+    <image class='icon' src='/images/order-details/icon-ddfh.png' mode='aspectFit'></image>
+    <image class="wave" src="/images/more/wave.png" mode="aspectFill"></image>
+
+
+  </view>
+  <view class='button'>进入店铺</view>
+</view>
